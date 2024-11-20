@@ -6,6 +6,6 @@ import { Component, Input } from '@angular/core';
   styleUrl: './left-page.component.scss'
 })
 export class LeftPageComponent {
-  @Input({ required: true }) title: string = '';
+  @Input({ required: false }) title: string = '';
   @Input({ required: true }) bgImage: string = '';
 }

@@ -1,5 +1,6 @@
 .home {
     height: 100%;
+    display: flex;
 
     &__figures-top {
         display: flex;
@@ -19,7 +20,7 @@
 
     &__sticker-dragon-fly {
         position: absolute;
-        top: -210px;
+        top: -140px;
         left: 680px;
     }
 }
