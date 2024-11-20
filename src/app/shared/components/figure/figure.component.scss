@@ -1,4 +1,5 @@
 .figure {
+    cursor: pointer;
     transform: scale(1);
     transition: transform 0.3s ease;
 
@@ -17,7 +18,6 @@
         background-image: url('/assets/images/bg/bg-figure.png');
         background-size: cover;
         height: 100%;
-        cursor: pointer;
     }
 
     &__text {

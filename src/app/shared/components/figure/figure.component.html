@@ -1,10 +1,10 @@
-<section class="figure">
+<section class="figure" (click)="triggerFileInput(fileInput)">
     <div class="figure__container" [ngStyle]="{ 'transform': 'rotate(' + rotate + 'deg)' }">
         <img src="/assets/images/icons/arrow-down-red.png" *ngIf="text && arrow == 'down'" [ngStyle]="{
                 'margin-top': (height - 44) + 'px'
             }">
         <div>
-            <div class="figure__back" [ngStyle]="{
+            <div #figure class="figure__back" [ngStyle]="{
                 'width': width + 'px',
                 'height': height + 'px',
             }">
@@ -15,4 +15,5 @@
             'margin-top': (height - 44) + 'px'
         }">
     </div>
+    <input type="file" #fileInput accept="image/*" (change)="onFileSelected($event, figure)" style="display: none;">
 </section>
