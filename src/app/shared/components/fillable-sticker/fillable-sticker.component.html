@@ -1,3 +1,5 @@
 <div class="fillable-sticker">
-    <img [src]="image">
+    <img [class]="{
+        'fillable-sticker__gray-image': !filled
+    }" [src]="image">
 </div>
