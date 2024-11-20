@@ -10,4 +10,5 @@ export class FigureComponent {
   @Input() width: number = 134;
   @Input() height: number = 188;
   @Input() text: string = '';
+  @Input() arrow: 'up' | 'down' = 'down';
 }

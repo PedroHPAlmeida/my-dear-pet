@@ -1,7 +1,7 @@
 .figure {
     margin: 15px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
 
     &__back {
@@ -11,6 +11,7 @@
     }
 
     &__text {
+        margin-top: 4px;
         text-align: center;
     }
 }

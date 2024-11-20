@@ -1,10 +1,18 @@
 <section class="figure" [ngStyle]="{
     'transform': 'rotate(' + rotate + 'deg)',
 }">
-    <div class="figure__back" [ngStyle]="{
-        'width': width + 'px',
-        'height': height + 'px',
-    }">
+    <img src="/assets/images/icons/arrow-down-red.png" *ngIf="text && arrow == 'down'" [ngStyle]="{
+            'margin-top': (height - 44) + 'px'
+        }">
+    <div>
+        <div class="figure__back" [ngStyle]="{
+            'width': width + 'px',
+            'height': height + 'px',
+        }">
+        </div>
+        <p class="figure__text text-medium-16-24 text-red-light">{{ text }}</p>
     </div>
-    <p class="figure__text text-medium-16-24 text-red-light">{{ text }}</p>
+    <img src="/assets/images/icons/arrow-up-red.png" *ngIf="text && arrow == 'up'" [ngStyle]="{
+        'margin-top': (height - 44) + 'px'
+    }">
 </section>
