@@ -23,4 +23,17 @@
         top: -140px;
         left: 680px;
     }
+
+    &__challenge-time {
+        position: relative;
+        text-align: center;
+        transform: rotate(15deg);
+    }
+
+    &__challenge-time-arrow {
+        position: absolute;
+        top: 240px;
+        left: 190px;
+        transform: rotate(-15deg);
+    }
 }

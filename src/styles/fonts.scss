@@ -71,6 +71,10 @@ $font-exbold: 800;
         @include text-style($font-exbold, 22px, 32px);
     }
 
+    &-exbold-36-44 {
+        @include text-style($font-exbold, 36px, 44px);
+    }
+
     &-body-14-22 {
         @include text-style($font-regular, 14px, 22px);
     }

@@ -1,5 +1,7 @@
 <section class="page" [ngStyle]="{'backgroundImage': 'url(' + bgImage + ')'}">
-    <h1 class="page__title text-exbold-24-28 text-red-light">{{ title }}</h1>
+    <header class="page__header">
+        <h1 class="text-exbold-24-28 text-red-light">{{ title }}</h1>
+    </header>
     <div class="page__content">
         <ng-content>
         </ng-content>

@@ -9,11 +9,12 @@
         <div class="home__figures-bottom">
             <app-figure />
             <app-figure />
-            <app-figure />
+            <app-figure text="correndo aos ventos" />
         </div>
         <div class="home__stickers">
-            <app-fillable-sticker image="/assets/images/stickers/sticker-bulldog.png" [filled]="filledStickers"/>
-            <app-fillable-sticker class="home__sticker-dragon-fly" image="/assets/images/stickers/sticker-dragon-fly.png" [filled]="filledStickers"/>
+            <app-fillable-sticker image="/assets/images/stickers/sticker-bulldog.png" [filled]="filledStickers" />
+            <app-fillable-sticker class="home__sticker-dragon-fly"
+                image="/assets/images/stickers/sticker-dragon-fly.png" [filled]="filledStickers" />
         </div>
     </app-left-page>
     <app-left-page bgImage="/assets/images/bg/bg-fields-right.png">
@@ -26,10 +27,15 @@
         <div class="home__figures-bottom">
             <app-figure />
             <app-figure />
-            <app-figure />
+            <div class="home__challenge-time">
+                <h2 class="text-exbold-36-44 text-red-light">Challenge</h2>
+                <h2 class="text-exbold-36-44 text-red-light">Time!</h2>
+                <app-figure [width]="168" [height]="236" />
+                <img class="home__challenge-time-arrow" src="/assets/images/icons/arrow-top-blue.png">
+            </div>
         </div>
-        <div class="home__stickers">
-            <app-fillable-sticker image="/assets/images/stickers/sticker-jackrussell.png" [filled]="filledStickers"/>
+        <div class="home__stickers-right">
+            <app-fillable-sticker image="/assets/images/stickers/sticker-jackrussell.png" [filled]="filledStickers" />
         </div>
     </app-left-page>
     <!-- Remover botão de testes -->
