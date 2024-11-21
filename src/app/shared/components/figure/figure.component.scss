@@ -1,11 +1,5 @@
 .figure {
     cursor: pointer;
-    transform: scale(1);
-    transition: transform 0.3s ease;
-
-    &:hover {
-        transform: scale(1.25);
-    }
 
     &__container {
         margin: 15px;

@@ -1,15 +1,15 @@
 <section class="home">
     <app-left-page title="Cheiro de grama, vento no focinho..." bgImage="/assets/images/bg/bg-fields-left.png">
         <div class="home__figures-top">
-            <app-figure />
-            <app-figure />
-            <app-figure />
-            <app-figure />
+            <app-figure appHighlight />
+            <app-figure appHighlight />
+            <app-figure appHighlight />
+            <app-figure appHighlight />
         </div>
         <div class="home__figures-bottom">
-            <app-figure />
-            <app-figure />
-            <app-figure text="correndo aos ventos" />
+            <app-figure appHighlight />
+            <app-figure appHighlight />
+            <app-figure appHighlight text="correndo aos ventos" />
         </div>
         <div class="home__stickers">
             <app-fillable-sticker image="/assets/images/stickers/sticker-bulldog.png" [filled]="filledStickers" />
@@ -20,15 +20,15 @@
     <p>.</p>
     <app-left-page bgImage="/assets/images/bg/bg-fields-right.png">
         <div class="home__figures-top">
-            <app-figure text="livre, leve e solto..." arrow="up"/>
-            <app-figure />
-            <app-figure />
-            <app-figure />
+            <app-figure appHighlight text="livre, leve e solto..." arrow="up" />
+            <app-figure appHighlight />
+            <app-figure appHighlight />
+            <app-figure appHighlight />
         </div>
         <div class="home__figures-bottom">
-            <app-figure />
-            <app-figure />
-            <div class="home__challenge-time">
+            <app-figure appHighlight />
+            <app-figure appHighlight />
+            <div appHighlightclass="home__challenge-time">
                 <h2 class="text-exbold-36-44 text-red-light">Challenge</h2>
                 <h2 class="text-exbold-36-44 text-red-light">Time!</h2>
                 <app-figure [width]="168" [height]="236" />
@@ -36,7 +36,8 @@
             </div>
         </div>
         <div class="home__stickers">
-            <app-fillable-sticker class="home__sticker-jackrussell" image="/assets/images/stickers/sticker-jackrussell.png" [filled]="filledStickers" />
+            <app-fillable-sticker class="home__sticker-jackrussell"
+                image="/assets/images/stickers/sticker-jackrussell.png" [filled]="filledStickers" />
         </div>
     </app-left-page>
     <!-- Remover botão de testes -->
