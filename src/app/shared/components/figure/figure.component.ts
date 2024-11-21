@@ -8,7 +8,6 @@ import { Component, Input } from '@angular/core';
 export class FigureComponent {
   selectedFile: File | null = null;
 
-  @Input() rotate: number = 0;
   @Input() width: number = 134;
   @Input() height: number = 188;
   @Input() text: string = '';
