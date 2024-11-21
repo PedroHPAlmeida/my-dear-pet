@@ -1,6 +1,10 @@
 .home {
-    height: 100%;
+    width: 100%;
+    height: 100vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 
     &__figures-top {
         display: flex;
