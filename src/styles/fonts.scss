@@ -1,5 +1,21 @@
 @import './colors.scss';
 
+@font-face {
+    font-family: 'TAN-Tangkiwood';
+    src: url('/assets/fonts/TAN- Tangkiwood.ttf') format('truetype'),
+        url('/assets/fonts/TAN- Tangkiwood.otf') format('opentype');
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
+@font-face {
+    font-family: 'Annies-Regular';
+    src: url('/assets/fonts/Annies-Regular.otf') format('opentype');
+    font-style: normal;
+    font-weight: normal;
+}
+
 $font-light: 300;
 $font-regular: 400;
 $font-medium: 500;
@@ -29,6 +45,10 @@ $font-exbold: 800;
 
     &-regular-16-24 {
         @include text-style($font-regular, 16px, 24px);
+    }
+
+    &-regular-24-28 {
+        @include text-style($font-regular, 24px, 28px);
     }
 
     &-medium-12-16 {
@@ -87,4 +107,13 @@ $font-exbold: 800;
 // Font colors
 .text-red-light {
     color: $red-light;
+}
+
+
+.font-tan-tangkiwood {
+    font-family: 'TAN-Tangkiwood', sans-serif;
+}
+
+.font-annies-regular {
+    font-family: 'Annies-Regular', sans-serif;
 }
