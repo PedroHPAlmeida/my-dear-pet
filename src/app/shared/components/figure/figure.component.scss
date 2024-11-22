@@ -1,16 +1,16 @@
 .figure {
     cursor: pointer;
-    
+
     &__container {
         margin: 15px;
         display: flex;
         flex-direction: row;
         align-items: center;
     }
-    
+
     &__frame {
         position: relative;
-        
+
         img,
         div {
             position: absolute;
@@ -23,13 +23,13 @@
         img {
             z-index: 1;
         }
-        
+
         div {
             z-index: 0;
             position: relative;
         }
     }
-    
+
     &__back {
         background-image: url('/assets/images/bg/bg-figure.png');
         background-size: cover;
