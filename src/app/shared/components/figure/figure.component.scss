@@ -1,17 +1,40 @@
 .figure {
     cursor: pointer;
-
+    
     &__container {
         margin: 15px;
         display: flex;
         flex-direction: row;
         align-items: center;
     }
+    
+    &__frame {
+        position: relative;
+        
+        img,
+        div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
 
+        img {
+            z-index: 1;
+        }
+        
+        div {
+            z-index: 0;
+            position: relative;
+        }
+    }
+    
     &__back {
         background-image: url('/assets/images/bg/bg-figure.png');
         background-size: cover;
         height: 100%;
+        box-shadow: 4px 8px 8px black;
     }
 
     &__text {

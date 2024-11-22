@@ -4,10 +4,13 @@
                 'margin-top': (height - 44) + 'px'
             }">
         <div>
-            <div #figure class="figure__back" [ngStyle]="{
-                'width': width + 'px',
-                'height': height + 'px',
-            }">
+            <div class="figure__frame">
+                <div #figure class="figure__back" [ngStyle]="{
+                    'width': width + 'px',
+                    'height': height + 'px',
+                }">
+                </div>
+                <img src="/assets/images/border/frame.png">
             </div>
             <p class="figure__text text-medium-16-24 text-red-light">{{ text }}</p>
         </div>
